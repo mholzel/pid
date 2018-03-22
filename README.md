@@ -339,10 +339,7 @@ const T default_throttle = argc > 9 ? stringTo<T>(argv[9]) : 0.3;
 
 So feel free to specify anywhere between 1 and 9 inputs. An example of the training process is shown in this video
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=HCu9NAZYuqg
-" target="_blank"><img src="http://img.youtube.com/vi/HCu9NAZYuqg/0.jpg" 
-alt="training" width="100%" border="10" /></a>
-
+[![Training a PID Controller](https://img.youtube.com/vi/HCu9NAZYuqg/0.jpg)](https://www.youtube.com/watch?v=HCu9NAZYuqg)
 
 
 
