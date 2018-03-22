@@ -337,12 +337,27 @@ const T kd_perturb = argc > 8 ? stringTo<T>(argv[8]) : 0.1;
 const T default_throttle = argc > 9 ? stringTo<T>(argv[9]) : 0.3;
 ```
 
-So feel free to specify anywhere between 1 and 9 inputs. An example of the training process is shown in this video (Click to play to on youtube):
+So feel free to specify anywhere between 1 and 9 inputs. An example of the training process is shown in this video:
 
-<video controls="controls">
-  <source type="video/mp4" src="video/training.mp4"></source>
-  <p>Your browser does not support the video element.</p>
+<video controls="controls" width=100%>
+  <source type="video/mp4" src="videos/training.mp4"></source>
 </video>
+
+After training this for a longer time with many more cost iterations (so that the whole track is taken into account), we seem to be getting pretty good performance with the parameters 
+
+```
+k_p = 0.6
+k_i = 0.006
+k_d = 1.5
+```
+
+as shown in the following video:
+
+<video controls="controls" width=100%>
+  <source type="video/mp4" src="videos/result.mp4"></source>
+</video>
+
+NOTE: This controller was optimized for the "Fastest" video setting. Since the sample rate depends on this parameter, you should use the same setting. 
 
 
 ## Quick start 
@@ -351,5 +366,3 @@ So feel free to specify anywhere between 1 and 9 inputs. An example of the train
 2. Make a build directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
 4. Run it: `./pid`. 
-
-Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)
