@@ -337,10 +337,12 @@ const T kd_perturb = argc > 8 ? stringTo<T>(argv[8]) : 0.1;
 const T default_throttle = argc > 9 ? stringTo<T>(argv[9]) : 0.3;
 ```
 
-So feel free to specify anywhere between 1 and 9 inputs. An example of the training process is shown in this video
+So feel free to specify anywhere between 1 and 9 inputs. An example of the training process is shown in this video (Click to play to on youtube):
 
-[![Training a PID Controller](https://img.youtube.com/vi/HCu9NAZYuqg/0.jpg)](https://www.youtube.com/watch?v=HCu9NAZYuqg)
-
+<video controls="controls">
+  <source type="video/mp4" src="video/training.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 
 ## Quick start 
